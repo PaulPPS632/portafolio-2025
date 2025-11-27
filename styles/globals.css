@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.logo {
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+}
+
+@config "../tailwind.config.js"
