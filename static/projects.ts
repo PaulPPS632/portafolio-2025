@@ -9,6 +9,8 @@ export const PROJECTS: ProjectType[] = [
     description: "Sitio web con todas las temporadas, libros y reparto de Game of Thrones.",
     technologies: [TECHNOLOGIES.html, TECHNOLOGIES.css, TECHNOLOGIES.javascript],
     category: ["FRONTEND"],
+    demoUrl: "https://got-v2.vercel.app/home",
+    repoUrl: "https://github.com/PaulPPS632/GOT-V2",
     year: 2019,
   },
   {
@@ -17,6 +19,7 @@ export const PROJECTS: ProjectType[] = [
     description: "E-commerce desarrollado primero con Spring Boot y luego migrado a Angular + Express.",
     technologies: [TECHNOLOGIES.angular, TECHNOLOGIES.express, TECHNOLOGIES.springboot, TECHNOLOGIES.mysql],
     category: ["FULLSTACK"],
+    demoUrl: "https://technetsac.com",
     year: 2023,
   },
   {
@@ -25,6 +28,7 @@ export const PROJECTS: ProjectType[] = [
     description: "Sistema de envío de mensajes promocionales usando colas con RabbitMQ y microservicios en Docker.",
     technologies: [TECHNOLOGIES.angular, TECHNOLOGIES.express, TECHNOLOGIES.rabbitmq, TECHNOLOGIES.docker],
     category: ["FULLSTACK"],
+    repoUrl: "https://github.com/PaulPPS632/wsp-bot-ccd-ui",
     year: 2024,
   },
   {
@@ -33,6 +37,7 @@ export const PROJECTS: ProjectType[] = [
     description: "Gestor de archivos con permisos por usuario, historial de acciones y almacenamiento en Cloudflare R2.",
     technologies: [TECHNOLOGIES.angular, TECHNOLOGIES.express, TECHNOLOGIES.r2, TECHNOLOGIES.postgresql],
     category: ["FULLSTACK"],
+    repoUrl:"https://github.com/PaulPPS632/GESTOR-ARCHIVOS-CCD-UI",
     year: 2024,
   },
   {
@@ -41,6 +46,8 @@ export const PROJECTS: ProjectType[] = [
     description: "Landing page en Astro como embudo de ventas para campañas de Meta y TikTok.",
     technologies: [TECHNOLOGIES.astro, TECHNOLOGIES.tailwind, TECHNOLOGIES.typescript],
     category: ["FRONTEND"],
+    demoUrl:"https://curso.ccdcapacitacion.edu.pe/",
+    repoUrl:"https://github.com/CCD-TI/SPA-CURSO",
     year: 2025,
   },
   {
@@ -49,6 +56,7 @@ export const PROJECTS: ProjectType[] = [
     description: "Microservicio Node.js para generar certificados PDF a partir de plantillas JSON.",
     technologies: [TECHNOLOGIES.nodejs, TECHNOLOGIES.express, TECHNOLOGIES.json],
     category: ["BACKEND"],
+    demoUrl:"git@github.com:PaulPPS632/Certificados.git",
     year: 2024,
   },
   {
@@ -73,6 +81,7 @@ export const PROJECTS: ProjectType[] = [
     description: "Aplicación SaaS de gestión de inventario y facturación con dashboards en tiempo real.",
     technologies: [TECHNOLOGIES.angular, TECHNOLOGIES.express, TECHNOLOGIES.postgresql, TECHNOLOGIES.docker],
     category: ["FULLSTACK"],
+    demoUrl:"",
     year: 2025,
   },
   {

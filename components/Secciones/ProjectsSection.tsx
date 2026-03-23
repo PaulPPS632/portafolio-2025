@@ -86,6 +86,32 @@ export default function ProjectsSection() {
                 </span>
               ))}
             </div>
+
+            {(proj.repoUrl || proj.demoUrl) && (
+              <div className="flex gap-3 mt-3">
+                {proj.repoUrl && (
+                  <a
+                    href={proj.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-blue-300 hover:text-blue-200 underline"
+                  >
+                    Repositorio
+                  </a>
+                )}
+
+                {proj.demoUrl && (
+                  <a
+                    href={proj.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-emerald-300 hover:text-emerald-200 underline"
+                  >
+                    Demo
+                  </a>
+                )}
+              </div>
+            )}
           </div>
         ))}
 
