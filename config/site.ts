@@ -1,8 +1,10 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Paul Perez",
+  description:
+    "Portafolio de Paul Perez — desarrollador fullstack. Experiencia, proyectos y stack.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://paul-perez.vercel.app",
   navItems: [
     {
       label: "Home",

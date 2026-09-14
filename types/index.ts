@@ -20,12 +20,21 @@ export interface ProjectType {
   title: string;
   description: string;
   technologies: Technology[];      // IDs de Technology
-  category: ('FRONTEND' | 'BACKEND' | 'FULLSTACK')[];
+  category: ('FRONTEND' | 'BACKEND' | 'FULLSTACK' | 'TOOL')[];
   repoUrl?: string;
   demoUrl?: string;
   imageUrl?: string;
   year?: number;
   highlights?: string[];
+
+  // --- Campos para la página de detalle (todos opcionales) ---
+  longDescription?: string;                              // contexto extendido del proyecto
+  role?: string;                                         // rol desempeñado en el proyecto
+  company?: string;                                      // empresa / cliente
+  status?: 'EN PRODUCCION' | 'EN DESARROLLO' | 'ARCHIVADO';
+  features?: string[];                                   // funcionalidades principales
+  challenges?: { title: string; description: string }[]; // retos técnicos y cómo se resolvieron
+  media?: { type: 'image' | 'video'; url: string; caption?: string }[];
 }
 
 

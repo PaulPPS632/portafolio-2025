@@ -11,6 +11,7 @@ import Header from "@/components/Header";
 import Presentacion from "@/components/Presentacion";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
@@ -45,7 +46,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen w-screen">
+          <div className="relative flex flex-col min-h-screen w-full">
             {/* <Navbar /> */}
             <Presentacion/>
             <Header/>

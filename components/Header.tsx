@@ -19,7 +19,7 @@ export default function Header() {
   }, []);
   //${scrolled ? "text-emerald-400" : "text-emerald-950"}
   return (
-    <nav className="fixed flex z-40 font-orbitron font-extrabold items-center justify-center py-4 backdrop-blur-sm w-screen">
+    <nav className="fixed flex z-40 font-orbitron font-extrabold items-center justify-center py-4 backdrop-blur-sm w-full">
       <button className="hidden">Projects</button>
       <h1 className={`text-[1.25rem] w-fit text-center mix-blend-multiply transition-colors duration-500 text-titles
         `}

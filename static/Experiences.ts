@@ -3,6 +3,64 @@ import { ExperienceCard } from "@/types";
 
 export const EXPERIENCES: ExperienceCard[] = [
   {
+    id: 'exp-005',
+    company: 'ICOCERT',
+    position: 'Desarrollador Full Stack',
+    startDate: '2026-05',
+    endDate: null,
+    isCurrent: true,
+    logoUrl: '/empresas/icocert.webp',
+    companyUrl: 'https://icocert.pe',
+    location: 'San Isidro, Lima, Perú',
+    summary: 'Desarrollo de dos productos SaaS para certificación ISO y gestión de Seguridad y Salud en el Trabajo: AUDITORÍA 24/7 y SEGURITO.',
+    bullets: [
+      'Llevé a producción el MVP web del proyecto auditor247 en mis primeras 2 semanas, destrabando el desarrollo y asegurando la continuidad operativa del producto.',
+      'Reduje los costos por auditoría en un 80% al diseñar e implementar un filtrado semántico de alta precisión, haciendo match entre los embeddings de documentos y requerimientos ISO (RAG).',
+      'Disminuí el tiempo de procesamiento de cada auditoría de 1-2 horas a 20-30 minutos, reestructurando el motor de IA mediante la implementación de Cloudflare Workers y Queues.',
+      'Desarrollé de manera autónoma "SEGURITO", un software SaaS integral para la gestión de Seguridad y Salud en el Trabajo (SST), utilizando React Native (móvil), Next.js (web) y NestJS (backend).',
+      'Construí un flujo automatizado para la generación de documentos SST y firmas de declaraciones juradas, implementando notificaciones en tiempo real, liderando actualmente la fase de pruebas (marcha blanca) en producción.',
+    ],
+    tech: [
+      'Next.js',
+      'React Native',
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'Cloudflare Workers',
+      'Cloudflare Queues',
+      'RAG / embeddings',
+    ],
+    achievements: [
+      'MVP web de AUDITORÍA 24/7 en producción en 2 semanas.',
+      '80% de reducción en el costo por auditoría gracias al filtrado semántico por embeddings.',
+      'Tiempo de procesamiento por auditoría de 1-2 horas a 20-30 minutos.',
+      'SEGURITO en marcha blanca en producción, desarrollado de forma autónoma en móvil, web y backend.',
+    ],
+    color: '#b3062f',
+    media: [
+      {
+        type: 'image',
+        url: '/proyectos/auditoria247/home-auditoria.webp',
+      },
+      {
+        type: 'image',
+        url: '/proyectos/auditoria247/flujo-auditoria.webp',
+      },
+      {
+        type: 'image',
+        url: '/proyectos/segurito/home-segurito.webp',
+      },
+      {
+        type: 'image',
+        url: '/proyectos/segurito/plataforma-segurito.webp',
+      },
+      {
+        type: 'image',
+        url: '/proyectos/segurito/como-segurito.webp',
+      },
+    ],
+  },
+  {
     id: 'exp-001',
     company: 'Centro de Capacitacion y Desarrollo',
     position: 'Jefe Area de TI',
@@ -157,7 +215,7 @@ export const EXPERIENCES: ExperienceCard[] = [
     ]
   },
   {
-    id: 'exp-003',
+    id: 'exp-004',
     company: 'Cuadrado Electronics',
     position: 'FullStack Developer',
     startDate: '2020-09',
@@ -204,6 +262,10 @@ export const EXPERIENCES: ExperienceCard[] = [
       {
         type:"image",
         url: '/experiencias/cuadrado/rastreo-producto-cuadrado.webp'
+      },
+      {
+        type:"image",
+        url: '/experiencias/cuadrado/correlativo-cuadrado.webp'
       }
     ],
   },
