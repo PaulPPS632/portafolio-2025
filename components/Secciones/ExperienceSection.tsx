@@ -1,11 +1,12 @@
-import { EXPERIENCES } from "@/static/Experiences";
 import CardExperience from "../Cards/CardExperience";
+
+import { EXPERIENCES } from "@/static/Experiences";
 
 export default function ExperienceSection() {
   return (
     <section
-      id="experiencia"
       className="relative flex flex-col bg-back max-w-7xl mx-auto px-4 sm:px-6"
+      id="experiencia"
     >
       <h2 className="sticky top-14 z-10 text-2xl sm:text-5xl font-orbitron font-bold text-titles text-center my-5 sm:my-10 mx-auto">
         EXPERIENCIA

@@ -2,10 +2,11 @@
 
 import { useMemo, useState } from "react";
 
+import CardProject from "../Cards/CardProject";
+
 import { ProjectType, Technology } from "@/types";
 import { PROJECTS } from "@/static/projects";
 import { TECHNOLOGIES } from "@/static/technologies";
-import CardProject from "../Cards/CardProject";
 
 const CATEGORIES = ["FRONTEND", "BACKEND", "FULLSTACK", "TOOL"] as const;
 
@@ -16,11 +17,11 @@ export default function ProjectsSection() {
   // Solo tecnologías que realmente se usan en algún proyecto
   const usedTechnologies = useMemo(() => {
     const ids = new Set(
-      PROJECTS.flatMap((proj) => proj.technologies.map((tech) => tech.id))
+      PROJECTS.flatMap((proj) => proj.technologies.map((tech) => tech.id)),
     );
 
     return Object.values(TECHNOLOGIES).filter((tech: Technology) =>
-      ids.has(tech.id)
+      ids.has(tech.id),
     );
   }, []);
 
@@ -37,7 +38,7 @@ export default function ProjectsSection() {
 
         return categoryMatch && techMatch;
       }),
-    [selectedCategory, selectedTech]
+    [selectedCategory, selectedTech],
   );
 
   return (

@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FaArrowLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaChevronRight,
+  FaExternalLinkAlt,
+  FaGithub,
+} from "react-icons/fa";
 
 import { PROJECTS } from "@/static/projects";
 import { ProjectType } from "@/types";
@@ -52,10 +57,10 @@ export default async function ProjectDetailPage({ params }: Props) {
     if (item.id === project.id) return false;
 
     const sameCategory = item.category.some((cat) =>
-      project.category.includes(cat)
+      project.category.includes(cat),
     );
     const sameTech = item.technologies.some((tech) =>
-      project.technologies.some((current) => current.id === tech.id)
+      project.technologies.some((current) => current.id === tech.id),
     );
 
     return sameCategory || sameTech;
@@ -173,7 +178,9 @@ export default async function ProjectDetailPage({ params }: Props) {
               className="bg-white/10 text-texto text-sm px-3 py-1.5 rounded-lg"
             >
               {tech.title}
-              <span className="text-texto/50 text-xs ml-2">{tech.category}</span>
+              <span className="text-texto/50 text-xs ml-2">
+                {tech.category}
+              </span>
             </span>
           ))}
         </div>
@@ -255,10 +262,16 @@ export default async function ProjectDetailPage({ params }: Props) {
                       controls
                       className="w-full h-full object-contain"
                       src={item.url}
-                    />
+                    >
+                      {/* Las capturas de producto no llevan audio ni diálogo */}
+                      <track kind="captions" />
+                    </video>
                   ) : (
                     <img
-                      alt={item.caption ?? `${project.title} - captura ${index + 1}`}
+                      alt={
+                        item.caption ??
+                        `${project.title} - captura ${index + 1}`
+                      }
                       className="w-full h-full object-contain"
                       loading="lazy"
                       src={item.url}
